@@ -1,0 +1,10 @@
+{
+    "name": " Trabalho Prático ASI",
+    "version": "1.0.0",
+    "description": "Documentação da API do Trabalho Prático ASI",
+    "title": "Documentação da API",
+    "url": "http://localhost:5565/api",
+    "template": {
+        "forceLanguage": "en"
+    }
+  }
