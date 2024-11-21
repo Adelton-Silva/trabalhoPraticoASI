@@ -24,12 +24,15 @@ then(() => {
 //middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use("/uploads", express.static("uploads"));
+
 
 //routes
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use('/api-docjs', express.static('./public/api-docjs'));
 app.use("/api", require("./routes/userRoutes"));
+
 
 app.listen(port, () => {
     console.log("Server running por:"+port);
